@@ -20,7 +20,6 @@ Arch Linux 환경을 위한 개인 Neovim 설정입니다. **GNU Stow**를 사�
 이 설정은 **Arch Linux**를 기준으로 작성되었습니다. 아래 명령어로 필요한 패키지들을 일괄 설치할 수 있습니다.
 
 ```bash
-# 필수 시스템 패키지 설치 (Neovim, Git, Stow, Ripgrep, Fd 등)
 sudo pacman -S --needed neovim git stow ripgrep fd npm python base-devel unzip
 ```
 
@@ -36,14 +35,9 @@ sudo pacman -S --needed neovim git stow ripgrep fd npm python base-devel unzip
 
 이 설정을 클론하고 Stow를 사용하여 `~/.config/nvim`에 적용하는 방법입니다.
 
-1.  **Dotfiles 디렉토리 생성 및 클론**
+1.  **Dotfiles 클론**
     ```bash
-    # 홈 디렉토리에 dotfiles 폴더가 없다면 생성 후 이동
-    mkdir -p ~/dotfiles
-    cd ~/dotfiles
-
-    # 저장소 클론 (현재 디렉토리에 nvim-config라는 이름으로)
-    git clone <YOUR_REPO_URL> nvim
+    git clone https://github.com/4lph4-dvlp/dotfiles.git
     ```
 
 2.  **Stow를 사용하여 설정 적용**
