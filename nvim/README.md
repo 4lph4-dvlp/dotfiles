@@ -1,11 +1,8 @@
 # Neovim Configuration
 
-Arch Linux 환경을 위한 개인 Neovim 설정입니다. **GNU Stow**를 사용하여 관리하기에 최적화되어 있습니다.
+Arch Linux 환경을 위한 개인 Neovim 설정입니다. **GNU Stow**의 관리 구조를 따릅니다.
 
 ## 📦 Features
-
-이 설정은 다음의 핵심 플러그인들을 포함합니다:
-
 *   **Plugin Manager**: [lazy.nvim](https://github.com/folke/lazy.nvim)
 *   **Theme**: [Catppuccin](https://github.com/catppuccin/nvim) (Luxurious & Modern)
 *   **Dashboard**: [alpha-nvim](https://github.com/goolord/alpha-nvim) (Stylized start screen)
@@ -41,21 +38,9 @@ sudo pacman -S --needed neovim git stow ripgrep fd npm python base-devel unzip
     ```
 
 2.  **Stow를 사용하여 설정 적용**
-    Stow는 해당 디렉토리의 내용을 상위 디렉토리(기본값)로 심볼릭 링크합니다.
-    (주의: 이 저장소의 구조가 `init.lua`가 루트에 있는 경우, 아래와 같이 타겟을 지정해야 합니다. 만약 저장소 구조가 `.config/nvim/...` 식이라면 단순히 `stow nvim`만 하면 됩니다.)
-
-    **Case A: 저장소 구조가 `.config/nvim/init.lua`인 경우 (권장)**
     ```bash
     cd ~/dotfiles
     stow nvim
-    ```
-
-    **Case B: 저장소 구조가 `init.lua`가 바로 있는 경우 (현재 구조)**
-    ```bash
-    cd ~/dotfiles/nvim
-    # 현재 디렉토리 내용을 ~/.config/nvim으로 링크
-    mkdir -p ~/.config/nvim
-    stow --target=$HOME/.config/nvim .
     ```
 
 3.  **플러그인 설치 확인**
@@ -84,6 +69,3 @@ sudo pacman -S --needed neovim git stow ripgrep fd npm python base-devel unzip
 | `gd` | 정의로 이동 |
 | `<Space>ca` | 코드 액션 (Fix) |
 | `<Space>gf` | 포매팅 (Format) |
-
----
-*Created with ❤️ by Antigravity*
