@@ -9,7 +9,7 @@ vim.g.mapleader = " "
 vim.opt.number = true
 vim.opt.relativenumber = true
 
--- 🔥 모든 언어에서 2칸 강제 (filetype 설정 덮어쓰기)
+-- 모든 언어에서 2칸 강제 (filetype 설정 덮어쓰기)
 vim.api.nvim_create_autocmd("FileType", {
   pattern = "*",
   callback = function()
@@ -20,3 +20,6 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.opt_local.indentexpr = ""  -- 언어별 indent 규칙 무시
   end,
 })
+
+--enable clipboard
+vim.opt.clipboard = "unnamedplus"
