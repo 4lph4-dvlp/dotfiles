@@ -17,7 +17,6 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.opt_local.tabstop = 2
     vim.opt_local.softtabstop = 2
     vim.opt_local.shiftwidth = 2
-    vim.opt_local.indentexpr = ""  -- 언어별 indent 규칙 무시
   end,
 })
 
