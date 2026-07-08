@@ -18,7 +18,7 @@ return {
       })
 
       require("mason-lspconfig").setup({
-        ensure_installed = { "lua_ls", "pyright", "ts_ls", "clangd" },
+        ensure_installed = { "lua_ls", "pyright", "ts_ls" },
       })
 
       -- 🔹 Key Bindings
