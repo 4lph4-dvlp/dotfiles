@@ -46,3 +46,6 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 
 # Aliases
 alias ls='ls --color=auto'
+
+# Register Path for /.local/bin
+export PATH="$HOME/.local/bin:$PATH"
