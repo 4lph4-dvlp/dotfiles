@@ -31,6 +31,11 @@ $character"""
 
 palette = 'catppuccin_mocha'
 
+# 창 제목 동적 설정 (모든 셸에서 작동: zsh, fish, pwsh, bash 등)
+[window_title]
+enabled = true
+format = "pwsh: $DIR"
+
 [os]
 disabled = false
 style = "bg:red fg:crust"
