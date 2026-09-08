@@ -69,3 +69,4 @@ sudo pacman -S --needed neovim git stow ripgrep fd npm python base-devel unzip
 | `gd` | 정의로 이동 |
 | `<Space>ca` | 코드 액션 (Fix) |
 | `<Space>gf` | 포매팅 (Format) |
+| `<Tab>` / `<S-Tab>` | 자동완성 선택 및 스니펫 필드 이동 (Next / Prev) |

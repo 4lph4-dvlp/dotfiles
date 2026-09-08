@@ -22,3 +22,13 @@ vim.api.nvim_create_autocmd("FileType", {
 
 --enable clipboard
 vim.opt.clipboard = "unnamedplus"
+
+-- Verilog / SystemVerilog 파일 확장자 인식 설정
+vim.filetype.add({
+  extension = {
+    v = "verilog",
+    vh = "verilog",
+    sv = "systemverilog",
+    svh = "systemverilog",
+  },
+})
