@@ -49,3 +49,9 @@ alias ls='ls --color=auto'
 
 # Register Path for /.local/bin
 export PATH="$HOME/.local/bin:$PATH"
+
+
+# Added by Antigravity CLI installer
+export PATH="/home/alpha/.local/bin:$PATH"
+
+export QSYS_ROOTDIR="/home/alpha/quartus_build/quartus-free/pkg/quartus-free-quartus/opt/intelFPGA/25.1/quartus/sopc_builder/bin"
