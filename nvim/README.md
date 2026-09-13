@@ -59,7 +59,7 @@ sudo pacman -S --needed neovim git stow ripgrep fd npm python base-devel unzip
 | :--- | :--- | :--- |
 | `<C-o>` | 파일 검색 (Find Files) | Telescope |
 | `<Space>fg` | 내용 검색 (Live Grep) | Telescope |
-| `<C-\>` | 탐색기 토글 | Neo-tree |
+| `<C-\>` / `<Space>\` | 탐색기 토글 | Neo-tree |
 | **Neo-tree** | `a`:추가, `d`:삭제, `r`:이름변경 | |
 
 ### Coding & LSP
@@ -70,3 +70,12 @@ sudo pacman -S --needed neovim git stow ripgrep fd npm python base-devel unzip
 | `<Space>ca` | 코드 액션 (Fix) |
 | `<Space>gf` | 포매팅 (Format) |
 | `<Tab>` / `<S-Tab>` | 자동완성 선택 및 스니펫 필드 이동 (Next / Prev) |
+| `<CR>` | 자동완성 선택/확정 (Confirm) |
+| `<Esc>` | 자동완성 팝업 닫기 (입력 모드 유지) / 일반 모드 복귀 |
+| `<C-e>` | 자동완성 취소 (Abort) |
+| `<C-Space>` | 자동완성 팝업 수동 트리거 |
+| `<C-b>` / `<C-f>` | 자동완성 문서 스크롤 (위 / 아래) |
+| `<C-j>` | Copilot 추천 코드 수락 (Insert Mode) |
+
+> [!NOTE]
+> GitHub Copilot은 기본적으로 비활성화되어 있습니다. 사용 시 `:Copilot enable` 명령어로 활성화하고 `:Copilot disable`로 비활성화할 수 있습니다.
