@@ -9,7 +9,10 @@ return {
       auto_install = true,
       ensure_installed = { "c", "lua", "javascript", "markdown", "python" },
       highlight = { enable = true },
-      indent = { enable = true },
+      indent = {
+        enable = true,
+        disable = { "c", "cpp" },
+      },
     })
   end,
 }
