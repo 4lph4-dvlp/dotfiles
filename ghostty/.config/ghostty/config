@@ -30,6 +30,7 @@ window-padding-x = 4
 window-padding-y = 4
 
 background = #000000
+keybind = ctrl+enter=unbind
 #
 # # Spacing around the equals sign does not matter.
 # # All of these are identical:
