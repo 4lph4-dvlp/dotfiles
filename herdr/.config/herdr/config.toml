@@ -7,3 +7,60 @@ onboarding = false
 # [terminal]
 # default_shell: Unset to automatically use 'pwsh' on Windows and '$SHELL' on Linux/macOS
 # default_shell = "pwsh"
+
+[keys]
+# Prefix (Tmux default)
+prefix = "ctrl+b"
+
+# Session & Workspace (Tmux style)
+detach = "prefix+d"
+workspace_picker = "prefix+s"
+rename_workspace = "prefix+$"
+previous_workspace = "prefix+("
+next_workspace = "prefix+)"
+
+# Tabs (Tmux Windows)
+new_tab = "prefix+c"
+close_tab = "prefix+&"
+previous_tab = "prefix+p"
+next_tab = "prefix+n"
+rename_tab = "prefix+comma"
+switch_tab = "prefix+1..9"
+
+# Pane Split & Navigation
+split_vertical = ["prefix+|", "prefix+v"]
+split_horizontal = "prefix+minus"
+close_pane = "prefix+x"
+zoom = "prefix+z"
+cycle_pane_next = "prefix+o"
+last_pane = "prefix+;"
+focus_pane_left = "prefix+h"
+focus_pane_down = "prefix+j"
+focus_pane_up = "prefix+k"
+focus_pane_right = "prefix+l"
+
+# Pane Resize & Swap
+resize_mode = "prefix+r"
+resize_pane_left = ["prefix+shift+h", "prefix+ctrl+left"]
+resize_pane_down = ["prefix+shift+j", "prefix+ctrl+down"]
+resize_pane_up = ["prefix+shift+k", "prefix+ctrl+up"]
+resize_pane_right = ["prefix+shift+l", "prefix+ctrl+right"]
+swap_pane_left = "prefix+{"
+swap_pane_right = "prefix+}"
+
+# Copy mode & Help
+copy_mode = "prefix+["
+help = "prefix+?"
+
+# Herdr Specifics
+reload_config = "prefix+shift+r"
+settings = "prefix+shift+s"
+toggle_sidebar = "prefix+b"
+goto = "prefix+g"
+open_notification_target = "prefix+u"
+edit_scrollback = "prefix+e"
+new_worktree = "prefix+shift+g"
+previous_agent = "prefix+alt+p"
+next_agent = "prefix+alt+n"
+focus_agent = "prefix+alt+1..9"
+
