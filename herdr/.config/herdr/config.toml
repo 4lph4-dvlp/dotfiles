@@ -1,0 +1,9 @@
+# herdr configuration
+# Managed by dotfiles (GNU Stow)
+
+onboarding = false
+
+# Terminal defaults
+# [terminal]
+# default_shell: Unset to automatically use 'pwsh' on Windows and '$SHELL' on Linux/macOS
+# default_shell = "pwsh"
