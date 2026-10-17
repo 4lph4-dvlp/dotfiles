@@ -91,7 +91,7 @@ Herdr의 키 바인딩을 **모던 Tmux 관례**에 맞춰 직관적으로 구�
 | **패널 포커스 이동** | `prefix + h / j / k / l` | Vim 스타일 방향 이동 |
 | **다음 패널 순환** | `prefix + o` | Tmux rotate/cycle pane (`cycle_pane_next`) |
 | **마지막 패널 복귀** | `prefix + ;` | 직전 활성 패널로 전환 (`last_pane`) |
-| **패널 맞바꾸기 (Swap)** | `prefix + {` / `prefix + }` | Tmux 표준 패널 스왑 (`swap_pane_left/right`) |
+| **패널 맞바꾸기 (Swap)** | `prefix + Ctrl + H / J / K / L`<br>`prefix + Alt + 방향키` 또는 `H / J / K / L`<br>`prefix + {` / `prefix + }` (좌/우) | 상/하/좌/우 패널 스왑 (`swap_pane_left/down/up/right`) |
 | **패널 닫기 (Kill)** | `prefix + x` | 현재 패널 닫기 |
 | **패널 최대화 (Zoom)** | `prefix + z` | 현재 패널 전체화면 토글 |
 | **패널 크기 조절 (Direct)** | `prefix + Ctrl + 방향키`<br>`prefix + Shift + H / J / K / L` | Tmux 스타일 좌/하/상/우 크기 조절 |

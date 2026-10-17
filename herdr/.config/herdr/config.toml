@@ -45,8 +45,10 @@ resize_pane_left = ["prefix+shift+h", "prefix+ctrl+left"]
 resize_pane_down = ["prefix+shift+j", "prefix+ctrl+down"]
 resize_pane_up = ["prefix+shift+k", "prefix+ctrl+up"]
 resize_pane_right = ["prefix+shift+l", "prefix+ctrl+right"]
-swap_pane_left = "prefix+{"
-swap_pane_right = "prefix+}"
+swap_pane_left = ["prefix+{", "prefix+ctrl+h", "prefix+alt+h", "prefix+alt+left"]
+swap_pane_down = ["prefix+ctrl+j", "prefix+alt+j", "prefix+alt+down"]
+swap_pane_up = ["prefix+ctrl+k", "prefix+alt+k", "prefix+alt+up"]
+swap_pane_right = ["prefix+}", "prefix+ctrl+l", "prefix+alt+l", "prefix+alt+right"]
 
 # Copy mode & Help
 copy_mode = "prefix+["
